@@ -1,0 +1,109 @@
+$contentWidth = '960px';
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  border-radius: 10px;
+  /* 线性渐变 */
+  background-image: -webkit-gradient(linear,
+  left bottom, left top,
+  color-stop(0.44, rgb(62, 175, 124)),
+  color-stop(0.72, rgb(62, 175, 124)),
+  color-stop(0.86, rgb(62, 175, 124)));
+  transition: 0.3s ease-in-out;
+}
+
+/*定义滑块悬浮样式*/
+::-webkit-scrollbar-thumb:hover {
+  background-image: -webkit-gradient(linear,
+  left bottom, left top,
+  color-stop(0.44, rgb(62, 175, 124)),
+  olor-stop(0.72, rgb(62, 175, 124)),
+  color-stop(0.86, rgb(62, 175, 124)));
+  transition: 0.3s ease-in-out;
+}
+
+.sidebar{
+  border-right none;
+}
+
+// 侧边栏 root 间隔变小，字体变小
+.sidebar > .sidebar-links > li:not(:first-child) {
+  margin-top: 0.0rem !important
+}
+
+.sidebar > .sidebar-links > li > a.sidebar-link {
+  font-size: 1em !important;
+  line-height: 1.5 !important;
+  font-weight: normal !important;
+}
+
+// 第一个为一个专题标题
+.sidebar > .sidebar-links > li:first-child {
+  //  color: #24292e!important
+  //  font-weight: 400;
+  //  line-height: 1.125;
+  //  background: #dfe2e5;
+}
+
+// 让 > 引用片段作为小标题使用的样式
+
+blockquote {
+  font-size: 0.95rem !important;
+  color: #2c3e50 !important;
+  border-left: 0.5rem solid #2c3e50 ed !important;
+  font-weight: 700;
+}
+
+.content:not(.custom) {
+  max-width 100% !important;
+}
+
+.content p {
+  word-break break-word !important;
+}
+
+.home .hero .description {
+  max-width 100% !important;
+}
+
+.theme-default-content {
+  word-break break-word;
+  h2{
+    border-bottom none
+  }
+}
+
+#gitalk-container {
+  max-width: $contentWidth!important;
+  margin: 0 auto;
+  padding: 2rem 2.5rem
+}
+
+@media (max-width: 959px) {
+  #gitalk-container {
+    padding: 2rem
+  }
+}
+
+@media (max-width: 419px) {
+  #gitalk-container {
+    padding: 1.5rem
+  }
+}
