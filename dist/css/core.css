@@ -1,0 +1,95 @@
+@charset "utf-8";
+/******************重置样式以及公用样式*************************/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, input, select {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size:12px;
+	overflow-x:hidden;
+}
+fieldset, img, input {
+	border:0 none;
+}
+:focus {
+	outline: 0;
+}
+a, a:link, a:visited, a:hover, a:active {
+	text-decoration:none;
+}
+table {
+	border-collapse:collapse;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+h3, .h3 {
+	font-size:14px;
+	font-weight:600;
+}
+ol, ul, li {
+	list-style: none;
+}
+.text-left {
+	text-align:left
+}
+.text-center {
+	text-align:center
+}
+.text-right {
+	text-align:right
+}
+.margin-center {
+	margin:0 auto
+}
+.back-fff {
+	background:#fff;
+}
+.float-l {
+	float:left;
+}
+.float-r {
+	float:right;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+* html .clearfix {
+	zoom: 1;
+} /* IE6 */
+*:first-child+html .clearfix {
+	zoom: 1;
+}
+
+body{
+	background: #000;
+	color:#eee;
+}
+.containter{
+	text-align: center;
+	height:400px;
+	overflow: hidden;
+}
+audio{
+	width:450px;
+	display: inherit;
+	margin: 20px auto;
+}
+.containter .lrcWrap{
+	transition: 0.2s;
+}
+.containter .lrcWrap li{
+	height:30px;
+	line-height: 30px;
+	transition: 0.2s;
+}
+.containter .lrcWrap li.active{
+	color:#fff;
+	transform: scale(1.25);
+}
