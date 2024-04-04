@@ -1,0 +1,1 @@
+import{av as e,p as t,m as a}from"./chunks/framework.CtlH_-Gv.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"question/node.md","filePath":"question/node.md","lastUpdated":null}'),n={name:"question/node.md"};function o(s,r,d,c,i,p){return a(),t("div")}const _=e(n,[["render",o]]);export{m as __pageData,_ as default};
